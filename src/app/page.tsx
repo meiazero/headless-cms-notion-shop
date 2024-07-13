@@ -2,21 +2,24 @@ import { Spotlight } from "@/components/Spotlight";
 import Link from "next/link";
 import React from "react";
 
+/**
+ * Force the page to be static and only change with a new build.
+ *
+ * read more about the Route Segment Config here:
+ * https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config#dynamic
+ */
 export const dynamic = "force-static";
 
 export default function Page() {
   return (
-
     <React.Fragment>
-      <Spotlight
-        className="-top-40 left-0 md:left-60 md:-top-20 text-zinc-50"
-      />
-      <section className="flex min-h-screen bg-zinc-950 text-zinc-50 w-full items-center justify-center">
+      <Spotlight className="md:left-50 -top-32 left-56 text-zinc-50 md:-top-20" />
+      <section className="flex min-h-screen w-full items-center justify-center">
         <div className="container flex flex-col justify-center space-y-8 text-center">
-          <h1 className="text-5xl font-extrabold tracking-tighter text-pretty md:text-7xl">
+          <h1 className="text-pretty text-5xl font-extrabold tracking-tighter md:text-7xl">
             Welcome to Next.js Template
           </h1>
-          <p className="mx-auto max-w-[550px] text-muted-foreground text-lg md:text-xl text-pretty">
+          <p className="mx-auto max-w-[550px] text-pretty text-lg text-muted-foreground md:text-xl">
             This template have installed: Next.js, Typescript, Tailwind CSS and
             shadcn-ui.
           </p>
