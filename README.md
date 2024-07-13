@@ -12,8 +12,6 @@ Create a new Notion Integration and get the `NOTION_API_KEY` from the integratio
 
 Create a new database following this structure:
 
-Create a new database following this structure:
-
 | title    | description | price | imageUrl |
 | -------- | ----------- | ----- | -------- |
 | Hotel t-shirt | This is a hotel t-shirt | 100 | /products/hotel-tshirt.png |
